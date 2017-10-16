@@ -1,0 +1,10 @@
+{
+    "name": "unet/magento-2-product-video",
+    "authors": [
+        {
+            "name": "Duc Dao",
+            "email": "ducdh1@smartosc.com"
+        }
+    ],
+    "require": {}
+}

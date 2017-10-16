@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Copyright © 2013-2017 Magento, Inc. All rights reserved.
+* See COPYING.txt for license details.
+*/
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Unet_ProductVideo::css/owl.carousel.min.css" />
+        <css src="Unet_ProductVideo::css/owl.theme.default.min.css" />
+    </head>
+    <body>
+        <referenceBlock name="main.content">
+            <block class="Unet\ProductVideo\Block\Product\View\Video" name="product.info.video" after="-" template="Unet_ProductVideo::product/view/video.phtml" />
+        </referenceBlock>
+    </body>
+</page>

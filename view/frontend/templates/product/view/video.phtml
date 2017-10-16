@@ -1,0 +1,30 @@
+<?php
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * Product media data template
+ *
+ * @var $block \Unet\ProductVideo\Block\Product\View\Video
+ */
+?>
+
+<div class="product-video owl-carousel owl-theme" id="product-video">
+</div>
+<?php
+    $block->getVideoImages();
+?>
+<script type="text/x-magento-init">
+    {
+        "#product-video": {
+            "productVideo" : {
+                "videoImages": <?php /* @escapeNotVerified */ echo $block->getVideoImages(); ?>,
+                "videoData": <?php /* @escapeNotVerified */ echo $block->getMediaGalleryDataJson(); ?>,
+                "videoSettings": <?php /* @escapeNotVerified */ echo $block->getVideoSettingsJson(); ?>,
+                "optionsVideoData": <?php /* @noEscape */ echo $block->getOptionsMediaGalleryDataJson(); ?>
+            }
+        }
+    }
+</script>
